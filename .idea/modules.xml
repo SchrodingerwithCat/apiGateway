@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/teacher_service.iml" filepath="$PROJECT_DIR$/.idea/teacher_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/apiGateway.iml" filepath="$PROJECT_DIR$/.idea/apiGateway.iml" />
     </modules>
   </component>
 </project>
