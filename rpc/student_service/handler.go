@@ -23,13 +23,13 @@ func (s *StudentServiceImpl) StuRegister(ctx context.Context, student *demo.Stud
 		result = s.db.Table("student_items").Create(demo.Student2StudentItem(student))
 		resp = &demo.RegisterResp{
 			Success: true,
-			Message: fmt.Sprintf("%s 注册成功。", student.String()),
+			Message: fmt.Sprintf("student_service: %s 注册成功。", student.String()),
 		}
 	} else {
 		// 不为空，ID不合法
 		resp = &demo.RegisterResp{
 			Success: false,
-			Message: fmt.Sprintf("ID %d 已经注册过了。", student.Id),
+			Message: fmt.Sprintf("student_service: ID %d 已经注册过了。", student.Id),
 		}
 	}
 	return
